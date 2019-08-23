@@ -8,7 +8,7 @@ import xerial.sbt.Sonatype._
 
 name := "play-html-compressor"
 
-version := "1.0.0"
+version := "1.1.0-RC5"
 
 libraryDependencies ++= Seq(
   "com.googlecode.htmlcompressor" % "htmlcompressor" % "1.5.2",
@@ -18,6 +18,8 @@ libraryDependencies ++= Seq(
   javaCore % Test,
   filters % Test
 )
+
+ThisBuild / useCoursier := false
 
 lazy val root = (project in file(".")).enablePlugins(play.sbt.PlayWeb)
 
