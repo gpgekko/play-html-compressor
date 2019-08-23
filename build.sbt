@@ -1,4 +1,3 @@
-import com.typesafe.sbt.SbtScalariform._
 import play.sbt.PlayImport._
 import scalariform.formatter.preferences._
 import xerial.sbt.Sonatype._
@@ -101,9 +100,7 @@ javacOptions ++= Seq(
 // Scalariform settings
 //*******************************
 
-defaultScalariformSettings
-
-ScalariformKeys.preferences := ScalariformKeys.preferences.value
+scalariformPreferences := scalariformPreferences.value
   .setPreference(FormatXml, false)
-  .setPreference(DoubleIndentClassDeclaration, false)
+  .setPreference(DoubleIndentConstructorArguments, false)
   .setPreference(DanglingCloseParenthesis, Preserve)
