@@ -52,6 +52,8 @@ publishMavenStyle := true
 
 publishArtifact in Test := false
 
+publishTo := sonatypePublishTo.value
+
 pomIncludeRepository := { _ => false }
 
 useGpg := true
