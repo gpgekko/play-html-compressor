@@ -5,7 +5,7 @@ resolvers += "Typesafe repository" at "https://repo.typesafe.com/typesafe/releas
 
 resolvers += "Sonatype snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
 
-addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.7.3")
+addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.8.0")
 
 addSbtPlugin("org.scalariform" % "sbt-scalariform" % "1.8.3")
 
